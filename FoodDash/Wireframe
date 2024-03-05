@@ -1,0 +1,12 @@
+Components : 
+-Nav Bar  
+    Home } meals , ingridients 
+
+- Home Page  
+   render 
+       - meals list } meal picture , Name 
+                 meal Page  }  Meal Picture Ingridients ,  instructuctions 
+        -Ingridients } ingridient pic , name ,
+                ingridient page } meals    
+
+                
