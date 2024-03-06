@@ -9,6 +9,7 @@ import IngredientsList from './Components/IngredientsList'
 import IngredientPage from './Components/IngredientPage'
 import MealsList from './Components/MealsList'
 import MealPage from './Components/MealPage'
+import Contact from './Components/Contact'
 
 
 function App() {
@@ -21,10 +22,12 @@ function App() {
     </div>
       <Routes>
           <Route exact path='/' element= {<Home/>}  />
-          <Route exact path ='/Ingredients' element={<IngredientsList/>}/>
-          <Route exact path ='/Ingredient/:id' element={<IngredientPage/>}/>
-          <Route exact path ='/Meals' element={<MealsList/>}/>
-          <Route exact path ='/Meals/:id' element={<MealPage/>}/>
+          <Route exact path ='/ingredients' element={<IngredientsList/>}/>
+          <Route exact path ='/ingredient/:id' element={<IngredientPage/>}/>
+          <Route exact path ='/meals' element={<MealsList/>}/>
+          <Route exact path ='/meals/:id' element={<MealPage/>}/>
+          <Route exact path ='./Contact' element={<Contact/>}/>
+
       </Routes>
       </div>
     </>
