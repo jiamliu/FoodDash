@@ -5,8 +5,7 @@ a{
 h3{
     color:rgba(8, 65, 46, 0.965);
     display: flex;
-    justify-content: center;
-    align-self: center;
+   
 }
 h2{
     color:rgba(8, 65, 46, 0.965);
@@ -24,6 +23,10 @@ h2{
     justify-content: center;
     align-items: center;
 
+}
+.Ingredients{
+    color:rgba(8, 65, 46, 0.965);
+    font-size: large;
 }
 form{
     display: flex;
@@ -116,15 +119,14 @@ margin-left: 8rem;
 
 }
 .imgSingle{
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    display: flex; 
     width: 30rem;
     height: auto;
     border-radius: 20px;
     
 }
 .mealContainer > p{
+  
     width: 65rem;
     height: 20em;
     font-size: large;
