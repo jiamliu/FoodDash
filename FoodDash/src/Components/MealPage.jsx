@@ -38,17 +38,14 @@ export default function MealPage() {
     }, [id]);
 
     return (
-        <div>
-            <h2>Meal Page</h2>
+        <div className='MealPage'>
+          
             {meal ? (
-                <div>
-                    <h3>{meal.strMeal}</h3>
-                    <img src={meal.strMealThumb} alt={meal.strMeal} />
-                    <p>Instructions: {meal.strInstructions}</p>
-                    <p>Area: {meal.strArea}</p>
-                    <img src={flagURL} alt={`${meal.strArea} flag`} />
+                <div className='mealContainer'>
+                    <h3>{meal.strMeal}</h3><h4><img src={flagURL} alt='flag'/> {meal.strArea}</h4> 
+                    <img className='imgSingle' src={meal.strMealThumb} alt={meal.strMeal} />
+                    <div className='Ingredients'>
                     <h4>Ingredients with Measurements:</h4>
-                    <ul>
                         {Object.entries(meal)
                             .filter(([key, value]) => key.startsWith('strIngredient') && value !== '' && value !== null)
                             .map(([key, value]) => (
@@ -56,7 +53,11 @@ export default function MealPage() {
                                     <span>{value}</span>: <span>{meal[`strMeasure${key.split('strIngredient')[1]}`]}</span>
                                 </li>
                             ))}
-                    </ul>
+                    </div>
+                    <p>Instructions: {meal.strInstructions}</p>
+                   
+                  
+                   
                 </div>
             ) : (
                 <p>Loading...</p>
