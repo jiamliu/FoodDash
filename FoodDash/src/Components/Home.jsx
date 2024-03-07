@@ -10,6 +10,7 @@ import ImageGallery from "./ImageGallery"
 
 export default function Home() {
 
+
   const { searchQuery, setSearchQuery } = useContext(DataContext)
 
   useEffect(() => {
@@ -28,5 +29,6 @@ return(
         </div>
       )}
 </>
+
 )
 }
