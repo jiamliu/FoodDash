@@ -33,6 +33,7 @@ const [searchType,setSearchType] =useState('meal')
           <Route exact path ='/meals' element={<MealsList/>}/>
           <Route exact path ='/meals/:id' element={<MealPage/>}/>
           <Route exact path ='/Contact' element={<Contact/>}/>
+
       </Routes>
       </DataContext.Provider>
       </div>
