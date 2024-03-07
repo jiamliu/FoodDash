@@ -1,9 +1,7 @@
+import { useRef } from 'react'
 
-import { useRef } from 'react';
 
 export default function Contact() {
-
-
 
     const nameRef = useRef();
     const addressRef = useRef();
@@ -31,6 +29,7 @@ export default function Contact() {
         emailRef.current.value = '';
         detailRef.current.value = '';
     };
+
 
     return (
         <>
