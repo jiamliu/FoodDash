@@ -1,3 +1,8 @@
-import React from "react"
-const DataContext = React.createContext()
+import { createContext } from "react"
+
+
+const DataContext = createContext(undefined)
+
+
+
 export default DataContext 
