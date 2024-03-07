@@ -18,6 +18,42 @@ h2{
     flex-direction: column;
 
 }
+.ContactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgba(8, 65, 46, 0.965);
+    font-weight: bolder;
+    font-size: large
+}
+
+form > input  {
+    width: 35rem;
+    height: 3rem;
+
+}
+form > textarea{
+    width: 35rem;
+    height: 10rem;
+}
+form > button{
+    width: 10em;
+    height: 3em;
+    margin-top: 1em;
+    border-radius: 10px;
+    font-weight: bolder;
+    border: 1px;
+    color:rgba(8, 65, 46, 0.965);
+   
+}
 .LinksContainer{
    
     height: 2em;
