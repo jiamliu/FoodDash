@@ -1,5 +1,3 @@
-
-import { useRef } from 'react';
 import { useRef } from 'react'
 
 export default function Contact() {
@@ -33,11 +31,7 @@ export default function Contact() {
         detailRef.current.value = '';
     };
 
-=========
-import { useRef } from 'react'
 
-export default function Contact () {
->>>>>>>>> Temporary merge branch 2
     return (
         <>
             <h1>Contact Us</h1>
