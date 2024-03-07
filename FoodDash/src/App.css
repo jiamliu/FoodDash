@@ -5,8 +5,7 @@ a{
 h3{
     color:rgba(8, 65, 46, 0.965);
     display: flex;
-    justify-content: center;
-    align-self: center;
+   
 }
 h2{
     color:rgba(8, 65, 46, 0.965);
@@ -17,6 +16,46 @@ h2{
     display: flex;
     flex-direction: column;
 
+}
+.ContactContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.Ingredients{
+    color:rgba(8, 65, 46, 0.965);
+    font-size: large;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:rgba(8, 65, 46, 0.965);
+    font-weight: bolder;
+    font-size: large
+}
+
+form > input  {
+    width: 35rem;
+    height: 3rem;
+
+}
+form > textarea{
+    width: 35rem;
+    height: 10rem;
+}
+form > button{
+    width: 10em;
+    height: 3em;
+    margin-top: 1em;
+    border-radius: 10px;
+    font-weight: bolder;
+    border: 1px;
+    color:rgba(8, 65, 46, 0.965);
+   
 }
 .LinksContainer{
    
@@ -80,15 +119,14 @@ margin-left: 8rem;
 
 }
 .imgSingle{
-    display: flex;
-    justify-content: center;
-    align-self: center;
+    display: flex; 
     width: 30rem;
     height: auto;
     border-radius: 20px;
     
 }
 .mealContainer > p{
+  
     width: 65rem;
     height: 20em;
     font-size: large;

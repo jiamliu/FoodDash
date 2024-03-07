@@ -1,5 +1,6 @@
 
 import { useRef } from 'react';
+
 export default function Contact() {
 
     const nameRef = useRef();
@@ -31,6 +32,9 @@ export default function Contact() {
 
     return (
         <>
+        <div className='ContactContainer'>
+
+       
             <h1>Contact Us</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
@@ -50,6 +54,7 @@ export default function Contact() {
 
                 <button type="submit">Submit</button>
             </form>
+            </div>
         </>
     )
 }
