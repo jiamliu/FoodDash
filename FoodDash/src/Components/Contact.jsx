@@ -1,6 +1,10 @@
+
+import { useRef } from 'react';
 import { useRef } from 'react'
 
 export default function Contact() {
+
+
 
     const nameRef = useRef();
     const addressRef = useRef();
@@ -29,7 +33,11 @@ export default function Contact() {
         detailRef.current.value = '';
     };
 
->>>>>>> main
+=========
+import { useRef } from 'react'
+
+export default function Contact () {
+>>>>>>>>> Temporary merge branch 2
     return (
         <>
             <h1>Contact Us</h1>
