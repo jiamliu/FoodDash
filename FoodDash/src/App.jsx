@@ -2,7 +2,6 @@ import { useState , useEffect, useContext } from 'react'
 import axios from 'axios'
 import './App.css'
 import { Route,Routes } from 'react-router-dom'
-import DataContext from './DataContext'
 import Header from './Components/Header'
 import Home from './Components/Home'
 import IngredientsList from './Components/IngredientsList'
@@ -10,14 +9,21 @@ import IngredientPage from './Components/IngredientPage'
 import MealsList from './Components/MealsList'
 import MealPage from './Components/MealPage'
 import Contact from './Components/Contact'
-
+import DataContext from './DataContext'
 
 function App() {
- 
+
+const [searchQuery,setSearchQuery] = useState('')
+const [inputValue, setInputValue] = useState('')
+const [searchType,setSearchType] =useState('meal')
+
   return (
     <>
     <div className='Page'>
+ 
+    <DataContext.Provider value ={{searchQuery,setSearchQuery,inputValue,setInputValue,searchType,setSearchType}}>
     <div className='Header'>
+    
  <Header/>
     </div>
       <Routes>
@@ -29,7 +35,9 @@ function App() {
           <Route exact path ='./Contact' element={<Contact/>}/>
 
       </Routes>
+      </DataContext.Provider>
       </div>
+      
     </>
   )
 }

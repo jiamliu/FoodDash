@@ -6,7 +6,7 @@ export default function Header (){
 
     return (
         <div className="Header">
-            <h1>Header</h1>
+              <h3 className="text"> FoodDash</h3>
             <NavBar/>
         </div>
     )
