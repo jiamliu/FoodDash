@@ -21,18 +21,18 @@ const MealsList = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Meals List</h2>
-      <ul>
+    <div className='MealPage'>
+      <div className='MealsContainer'>
         {meals.map(meal => (
-          <li key={meal.idMeal}>
+          <div className ="mealsContainer" key={meal.idMeal}>
             <Link to={`/meals/${meal.idMeal}`}>
-            <span>{meal.strMeal}</span>
-              <img src={meal.strMealThumb} alt={meal.strMeal} />
+            <h2>{meal.strMeal}</h2>
+              <img className= 'imggroup' src={meal.strMealThumb} alt={meal.strMeal} />
             </Link>
-          </li>
+          </div>
         ))}
-      </ul>
+        </div>
+    
     </div>
   );
 };
