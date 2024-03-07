@@ -9,7 +9,7 @@ const MealsList = () => {
   useEffect(() => {
     const fetchMeals = async () => {
       try {
-        const response = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s='); // Example API endpoint
+        const response = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s=') // Example API endpoint
         setMeals(response.data.meals);
       } catch (error) {
         console.log('Error fetching meals:', error);
