@@ -10,7 +10,8 @@ export default function IngredientPage() {
       const fetchIngredientDetails = async () => {
           try {
             console.log(id)
-              const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/list.php?i=list${id}`)
+              const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
+              console.log('API Response:', response.data)
               setIngredient(response.data.meals[0])
           } catch (error) {
               console.log('Error fetching ingredient details:', error)
