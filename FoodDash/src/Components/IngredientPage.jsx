@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import axios from 'axios'
+import { Link } from 'react-router-dom'
 
 export default function IngredientPage() {
   const { id } = useParams()
@@ -10,8 +11,13 @@ export default function IngredientPage() {
       const fetchIngredientDetails = async () => {
           try {
             console.log(id)
-              const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/list.php?i=list${id}`)
-              setIngredient(response.data.meals[0])
+              const response = await axios.get(`https://www.themealdb.com/api/json/v1/1/list.php?i=list`)
+              const filteredIngredient = response.data.meals.find(item => item.idIngredient === id)
+              if (filteredIngredient) {
+                setIngredient(filteredIngredient)
+              } else {
+                console.log('Ingredient not found.')
+              }
           } catch (error) {
               console.log('Error fetching ingredient details:', error)
           }
@@ -21,11 +27,11 @@ export default function IngredientPage() {
   }, [id])
 
   return (
-      <div>
-          <h2>Ingredient Page</h2>
+      <div className='IngrdDeatails'>
+          <Link className= ' link' to="/Ingredients" >Back</Link>
           {ingredient ? (
             <div>
-              <p>Name: {ingredient.strIngredient}</p>
+              <h2 className='ingrName'>Name: {ingredient.strIngredient}</h2>
               <p>Description: {ingredient.strDescription}</p>
             </div>
           ) : (

@@ -9,8 +9,35 @@ h3{
 }
 h2{
     color:rgba(8, 65, 46, 0.965);
-}
 
+}
+.ingrName{
+    margin-left: 18em;
+}
+.IngrdDeatails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:rgba(8, 65, 46, 0.965);
+    
+}
+.titleingr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+font-size: 5rem;
+
+
+}
+.inglist{
+    margin-left: 10em ;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Three columns with equal width */
+    gap: 20px;
+    height: 40rem;
+    overflow: scroll;
+    
+}
 .Home{
    
     display: flex;
@@ -99,6 +126,8 @@ form > button{
     flex-wrap: wrap; 
   justify-content: center;
 margin-left: 5em;
+height: 60em;
+overflow: scroll;
 }
 
 .mealsContainer{
@@ -141,7 +170,22 @@ margin-left: 8rem;
 
 
 }
-
+p{
+   
+     margin-top: 10em;
+    width: 65rem;
+    height: 20em;
+    font-size: large;
+    letter-spacing: 2px;
+    text-justify:distribute;
+    text-align: center;
+    text-wrap:balance;
+    overflow: scroll ;
+    line-height: 40px;
+    line-break:loose;
+    white-space: pre-line;
+ 
+}
 .imggroup{
     width: 25rem;
     height: auto;

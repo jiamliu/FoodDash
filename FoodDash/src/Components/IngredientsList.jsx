@@ -20,17 +20,21 @@ export default function IngredientsList() {
     },[])
 
     return(
-        <div>
-            <h2>Ingredients List </h2>
-            <ul>
+        <>
+      
+        <h2 className="titleingr">Ingredients List </h2>
+        <div className="inglist">
+          
+           
                 {ingredients.map(ingredient => (
-                <li key={ingredient.idIngredient}>
+                <div key={ingredient.idIngredient}>
                     <Link to={`/ingredient/${ingredient.idIngredient}`}>
-                    <span>{ingredient.strIngredient}</span>
+                    <h3>{ingredient.strIngredient}</h3>
                     </Link>
-                </li>
+                </div>
             ))}
-            </ul>
-        </div>      
+          
+        </div> 
+        </>     
     )
 }
