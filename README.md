@@ -1,20 +1,6 @@
 # FoodDash
-
-
 FoodDash is a web application for browsing and exploring various meals. Users can view a list of meals, search for specific meals, view details about individual meals, and more.
 
-
-## 
-
-![alt text](images/Contact.png)
-
-![alt text](images/Home.png)
-
-![alt text](images/IngredientList.png)
-
-![alt text](images/MealList.png)
-
-![alt text](images/Screenshot.png)
 
 ## Features
 - Browse a list of meals
